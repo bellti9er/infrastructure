@@ -1,0 +1,14 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+# Module directory
+.terraform/
+
+# vim
+tags
+*~
+
+# Jetbrains
+.idea
+*.iml
