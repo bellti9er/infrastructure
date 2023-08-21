@@ -9,7 +9,6 @@
 - Build and connect API Gateway and Lambda.
 - Message Queue (ex. SQS, SNS)
 - Modularization
-- Infrastructure Architecture Diagram
 
 </br>
 
@@ -34,6 +33,8 @@ infrastructure
 ├── global
 │   ├── iam
 │   ├── s3
+│   └── ...
+├── scripts
 │   └── ...
 ├── management
 │   ├── services
@@ -60,6 +61,9 @@ infrastructure
 
 ####  - global
 - production, staging, dev 등에 모두 사용되는 system 설정 코드가 위치합니다.
+
+#### - scirpts
+- 리소스 생성 및 관리 시 사용되는 스크립트가 위치합니다. (ex. kms encrypt/decrypt)
 
 #### - management
 - 다른 infrastructure들을 관리하는 시스템들이 위치합니다.
